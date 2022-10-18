@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">first</string>
+    <string name="simple_game">simple Game!!</string>
+    <string name="button">Button</string>
+    <string name="_20">20</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="_30">30</string>
+    <string name="re">+</string>
+</resources>
