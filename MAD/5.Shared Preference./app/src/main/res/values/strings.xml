@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Shared_pref</string>
-    <string name="result_correct">COORRECT</string>
-    <string name="result_wrong">WRONG</string>
-</resources>
