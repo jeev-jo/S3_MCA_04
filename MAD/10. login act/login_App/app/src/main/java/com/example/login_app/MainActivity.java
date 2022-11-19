@@ -70,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
         String passwordText = password.getText().toString();
         if (passwordText.length() <8)
             return "Password must be minimum 8 digit";
-        if (passwordText.matches(".*[a-z].*"))
+        if (!passwordText.matches(".*[a-z].*"))
             return "Password must contain a lower case";
-        if (passwordText.matches(".*[A-Z].*"))
+        if (!passwordText.matches(".*[A-Z].*"))
             return "Password must contain an Upper case";
-        if(passwordText.matches(".*[0-9].*"))
+        if(!passwordText.matches(".*[0-9].*"))
             return "Password must contain a number";
-        if (passwordText.matches(".*[!@#$%^&*+=/?].*"))
+        if (!passwordText.matches(".*[!@#$%^&*+=/?].*"))
             return "Password must contain a special character";
         return null;
     }

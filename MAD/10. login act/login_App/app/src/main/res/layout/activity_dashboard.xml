@@ -11,7 +11,8 @@
         android:layout_height="729dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView2"
@@ -25,7 +26,7 @@
         <com.google.android.material.textfield.TextInputEditText
 
             android:layout_width="match_parent"
-            android:id="@+id/fist"
+            android:id="@+id/first"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:hint="First Name"
@@ -76,7 +77,8 @@
             android:text="insert"
             android:layout_gravity="center"
             android:layout_height="62dp"
-            android:id="@+id/b_insert" />
+            android:id="@+id/b_insert"
+            android:onClick="onInsert"/>
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="60dp"
             android:layout_width="290dp"
@@ -84,7 +86,8 @@
             android:text="update"
             android:layout_gravity="center"
             android:layout_height="62dp"
-            android:id="@+id/b_update" />
+            android:id="@+id/b_update"
+            android:onClick="onUpdate"/>
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="60dp"
             android:layout_width="290dp"
@@ -92,7 +95,8 @@
             android:text="delete"
             android:layout_gravity="center"
             android:layout_height="62dp"
-            android:id="@+id/b_delete" />
+            android:id="@+id/b_delete"
+            android:onClick="onDelete"/>
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="60dp"
             android:layout_width="290dp"
@@ -100,6 +104,16 @@
             android:text="Search"
             android:layout_gravity="center"
             android:layout_height="62dp"
-            android:id="@+id/b_search" />
+            android:id="@+id/b_search"
+            android:onClick="onSearch"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="60dp"
+            android:layout_width="290dp"
+            android:layout_margin="4dp"
+            android:text="Clear"
+            android:layout_gravity="center"
+            android:layout_height="62dp"
+            android:id="@+id/b_reset"
+            android:onClick="onReset"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
